@@ -18,7 +18,7 @@ export default function Navbar() {
               
             </div>
             <div className="name text-white">
-              <Link to="/">NIKISENSEI</Link>
+              <Link to="/">Nikshep</Link>
             </div>
           </div>
           <div className="pages">
