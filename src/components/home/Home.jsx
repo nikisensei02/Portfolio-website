@@ -209,7 +209,9 @@ export default function Home() {
                   <Link to="/">
                     <button className='py-[1px] px-6 md:px-6 rounded-full border-purple-500 border-[1px] hover:bg-white hover:text-purple-500 w-fit' onClick={reloadToHome}>Link</button>
                   </Link>
-
+                  <a href="https://github.com/nikisensei02/Portfolio-website" className='ml-4' target='blank'>
+                    <i className="fa-brands fa-github md:fa-lg fa-xl"></i>
+                  </a>
                 </div>
 
               </div>
@@ -240,6 +242,9 @@ export default function Home() {
                       Link
                     </a>
                   </button>
+                  <a href="https://github.com/nikisensei02/GoShip" className='ml-4' target='blank'>
+                    <i className="fa-brands fa-github md:fa-lg fa-xl"></i>
+                  </a>
                 </div>
               </div>
             </motion.div>
@@ -269,6 +274,9 @@ export default function Home() {
                       Link
                     </a>
                   </button>
+                  <a href="https://github.com/nikisensei02/wordle6" className='ml-4' target='blank'>
+                    <i className="fa-brands fa-github md:fa-lg fa-xl"></i>
+                  </a>
                 </div>
               </div>
             </motion.div>
