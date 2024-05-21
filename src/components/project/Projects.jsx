@@ -1,9 +1,14 @@
 import gmail_logo from '../home/gmail.jpg'
-import project1 from './project1.png'
-import project2 from './project2.png'
+import project11 from './project1-1.png'
+import project12 from './project1-2.png'
+import project33 from './project3-3.png'
+import project23 from './project2-3.png'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 export default function Projects() {
+  const reloadToHome = () => {
+    window.scrollTo(0, 0);
+  }
   return (
     <div className="">
 
@@ -17,19 +22,22 @@ export default function Projects() {
           WELCOME TO THE PROJECTS
         </div>
         <div className="item">
-          <div className="project1 flex my-4 border-b-[1px] border-black pb-4">
-            <motion.div className="image w-[15vw] h-[16vw]  mx-4"
-              initial={{ scaleX: 0 }}
-              animate={{ scaleX: 1 }}
-              transition={{
-                duration: 0.5
-              }}
-              exit={{ scaleX: 1, border: 'none' }}
-            >
-              <img src={project1} alt="" />
-              <img src={project2} alt="" />
-            </motion.div>
-            <motion.div className="description flex text-sm w-[40vw] mx-4"
+          <div className="project1 flex flex-col md:flex-row my-4 border-b-[1px] border-black pb-4">
+            <div className='flex justify-center '>
+              <motion.div className="image w-[40vw] h-[40vw] md:w-[15vw] md:h-[16vw]   mx-4"
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: 1 }}
+                transition={{
+                  duration: 0.5
+                }}
+                exit={{ scaleX: 1, border: 'none' }}
+              >
+                <img src={project11} alt="" />
+                <img src={project12} alt="" />
+              </motion.div>
+            </div>
+
+            <motion.div className="description flex text-sm md:w-[40vw] mx-4"
               initial={{ scaleY: 0 }}
               animate={{ scaleY: 1 }}
               transition={{
@@ -52,24 +60,31 @@ export default function Projects() {
                   <p className='font-semibold mx-2'>Technologies Used:</p>
                   <p className='font-bold mx-2'>React, Tailwind CSS, Framer Motion, JavaScript, HTML, CSS.</p>
                 </p>
-                <div className="flex justify-center mt-2 p-[2px] w-[8vw] text-lg text-black mx-2 border-2 border-black rounded-2xl cursor-pointer hover:bg-black hover:text-white">
-                  <Link to="/"><p>Visit</p></Link>
+                <div className="flex justify-center mt-2 p-[2px]  md:w-[8vw] text-lg text-black mx-2 border-2 border-black rounded-2xl cursor-pointer hover:bg-black hover:text-white">
+                  <Link to="/" onClick={reloadToHome}><p>Visit</p></Link>
                 </div>
               </div>
 
             </motion.div>
           </div>
-          <div className="project2 flex my-4 border-b-[1px] border-black pb-4">
-            <motion.div className="image w-[15vw] h-[17vw] border-2 border-black mx-4"
-              initial={{ scaleX: 1 }}
-              animate={{ scaleX: 1 }}
-              transition={{
-                duration: 0.5
-              }}
-              exit={{ scaleX: 1, border: 'none' }}
-            >
-            </motion.div>
-            <motion.div className="description flex text-sm w-[40vw] mx-4"
+
+
+
+          <div className="project2 flex flex-col md:flex-row my-4 border-b-[1px] border-black pb-4">
+            <div className="flex justify-center">
+              <motion.div className="image w-[40vw] h-[40vw] md:w-[15vw] md:h-[16vw] border-2 border-black mx-4"
+                initial={{ scaleX: 1 }}
+                animate={{ scaleX: 1 }}
+                transition={{
+                  duration: 0.5
+                }}
+                exit={{ scaleX: 1, border: 'none' }}
+              >
+                <img src={project23} alt="" />
+              </motion.div>
+            </div>
+
+            <motion.div className="description flex text-sm md:w-[40vw] mx-4"
               initial={{ scaleY: 0 }}
               animate={{ scaleY: 1 }}
               transition={{
@@ -79,37 +94,44 @@ export default function Projects() {
             >
               <div>
                 <p className='font-semibold m-2 text-lg'>
-                  Portfolio Website Project:
+                  GoShip(chat app)
                 </p>
                 <p className='flex m-2'>
                   <p className='font-semibold mx-2'>Description:</p>
                   <p className='font-light'>
-                    Developed a professional portfolio website using React, Tailwind CSS,
-                    and Framer Motion, highlighting my skills and projects in web development.
+                    A chatting website using React, mongodB and Socket.io.
+                    Experience real-time chatting, seamless dark mode, and effortless
+                    account management in our sleek React-based messaging application.
                   </p>
                 </p>
                 <p className='mt-2'>
                   <p className='font-semibold mx-2'>Technologies Used:</p>
-                  <p className='font-bold mx-2'>React, Tailwind CSS, Framer Motion, JavaScript, HTML, CSS.</p>
+                  <p className='font-bold mx-2'>React, mongodB, Socket.io, styled-components, JavaScript, HTML, CSS.</p>
                 </p>
-                <div className="flex justify-center mt-2 p-[2px] w-[8vw] text-lg text-black mx-2 border-2 border-black rounded-2xl cursor-pointer hover:bg-black hover:text-white">
-                  <p>Visit</p>
+                <div className="flex justify-center mt-2 p-[2px] md;w-[8vw] text-lg text-black mx-2 border-2 border-black rounded-2xl cursor-pointer hover:bg-black hover:text-white">
+                  <a href="https://664c255b9e6c50823bb16adf--kaleidoscopic-swan-570a57.netlify.app/" target='blank'>Visit</a>
                 </div>
               </div>
 
             </motion.div>
           </div>
-          <div className="project3 flex my-4 border-b-[1px] border-black pb-4">
-            <motion.div className="image w-[15vw] h-[17vw] border-2 border-black mx-4"
-              initial={{ scaleX: 1 }}
-              animate={{ scaleX: 1 }}
-              transition={{
-                duration: 0.5
-              }}
-              exit={{ scaleX: 1, border: 'none' }}
-            >
-            </motion.div>
-            <motion.div className="description flex text-sm w-[40vw] mx-4"
+
+
+          <div className="project3 flex flex-col md:flex-row my-4 border-b-[1px] border-black pb-4">
+            <div className="flex justify-center">
+              <motion.div className="image w-[40vw] h-[40vw] md:w-[15vw] md:h-[16vw] border-2 border-black mx-4"
+                initial={{ scaleX: 1 }}
+                animate={{ scaleX: 1 }}
+                transition={{
+                  duration: 0.5
+                }}
+                exit={{ scaleX: 1, border: 'none' }}
+              >
+                <img src={project33} alt="" />
+              </motion.div>
+            </div>
+
+            <motion.div className="description flex text-sm md:w-[40vw] mx-4"
               initial={{ scaleY: 0 }}
               animate={{ scaleY: 1 }}
               transition={{
@@ -119,21 +141,24 @@ export default function Projects() {
             >
               <div>
                 <p className='font-semibold m-2 text-lg'>
-                  Portfolio Website Project:
+                  Wordle6(Word game)
                 </p>
                 <p className='flex m-2'>
                   <p className='font-semibold mx-2'>Description:</p>
                   <p className='font-light'>
-                    Developed a professional portfolio website using React, Tailwind CSS,
-                    and Framer Motion, highlighting my skills and projects in web development.
+                    Wordle6 is an addictive word puzzle game featuring six-letter words.
+                    Race against time, earn points for each correct guess, and track your score.
+                    Enjoy the challenge with added features for time management and competitive scoring.
+                    Test your vocabulary and strategy as you strive for mastery
+                    in this captivating frontend gaming experience.
                   </p>
                 </p>
                 <p className='mt-2'>
                   <p className='font-semibold mx-2'>Technologies Used:</p>
-                  <p className='font-bold mx-2'>React, Tailwind CSS, Framer Motion, JavaScript, HTML, CSS.</p>
+                  <p className='font-bold mx-2'>React, Tailwind CSS, JavaScript, HTML, CSS.</p>
                 </p>
-                <div className="flex justify-center mt-2 p-[2px] w-[8vw] text-lg text-black mx-2 border-2 border-black rounded-2xl cursor-pointer hover:bg-black hover:text-white">
-                  <p>Visit</p>
+                <div className="flex justify-center mt-2 p-[2px] md:w-[8vw] text-lg text-black mx-2 border-2 border-black rounded-2xl cursor-pointer hover:bg-black hover:text-white">
+                  <a href="https://6649b1663800ea82e82b9621--friendly-druid-fa289a.netlify.app/" target='blank'>Visit</a>
                 </div>
               </div>
 

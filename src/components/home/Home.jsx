@@ -1,4 +1,4 @@
-import mainPhoto from './mainPhoto.jpg'
+import mainPhoto from './photo3.jpg'
 import one from './1.jpg'
 import two from './2.jpg'
 import three from './3.jpg'
@@ -13,6 +13,10 @@ import mongo_logo from './mongo_logo.png'
 import express_logo from './express_logo.png'
 import canva_logo from './canva_logo.jpeg'
 import gmail_logo from './gmail.jpg'
+import project11 from '../project/project1-1.png'
+import project12 from '../project/project1-2.png'
+import project23 from '../project/project2-3.png'
+import project33 from '../project/project3-3.png'
 
 
 import { Link } from 'react-router-dom'
@@ -53,7 +57,10 @@ export default function Home() {
       console.log("hello");
     }
   });
-
+  const reloadToHome = () => {
+    window.scrollTo(0, 0);
+  }
+  
 
   return (
     <div >
@@ -108,7 +115,7 @@ export default function Home() {
         </motion.div>
       </div>
 
-      
+
 
 
       {/* about me content */}
@@ -176,9 +183,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div ref={ref2} className="md:ml-[40vw] px-[25vw] md:pl-[0] content md:border-t-[1px] flex items-center md:w-[50vw] py-2 overflow-scroll md:overflow-visible">
-            
-            <motion.div className="card1 mx-1 border-2 rounded-md min-w-[50vw] md:min-w-[12vw] h-[70vw] md:h-[16vw]"
+          <div ref={ref2} className="md:ml-[40vw] px-[22vw] md:pl-[0] content md:border-t-[1px] flex items-center md:w-[50vw] py-2 overflow-scroll md:overflow-visible">
+
+            <motion.div className="card1 mx-1 border-2 p-2 rounded-md min-w-[55vw] md:min-w-[14vw] h-[75vw] md:h-[19vw]"
               variants={{
                 hidden: { opacity: 0, y: 100 },
                 visible: { opacity: 1, y: 0 }
@@ -190,10 +197,25 @@ export default function Home() {
                 duration: 0.5
               }}
             >
-              project1
+              <div className="project1">
+                <p className='text-center text-xl md:text-sm p-2'>
+                  Personal Portfolio
+                </p>
+                <div className="image">
+                  <img src={project11} alt="" />
+                  <img src={project12} alt="" />
+                </div>
+                <div className="button flex justify-center mt-7 md:mt-2 text-sm">
+                  <Link to="/">
+                    <button className='py-[1px] px-6 md:px-6 rounded-full border-purple-500 border-[1px] hover:bg-white hover:text-purple-500 w-fit' onClick={reloadToHome}>Link</button>
+                  </Link>
+
+                </div>
+
+              </div>
             </motion.div>
 
-            <motion.div className="card2 mx-1 border-2 rounded-md min-w-[50vw] md:min-w-[12vw] h-[70vw] md:h-[16vw]"
+            <motion.div className="card2 mx-1 border-2 rounded-md min-w-[55vw] md:min-w-[12vw] p-2 h-[75vw] md:h-[19vw]"
               variants={{
                 hidden: { opacity: 0, y: 100 },
                 visible: { opacity: 1, y: 0 }
@@ -205,10 +227,24 @@ export default function Home() {
                 duration: 0.5
               }}
             >
-              project2
+              <div className="project1">
+                <p className='text-center text-xl md:text-sm p-2 '>
+                  GoShip(chat-app)
+                </p>
+                <div className="image">
+                  <img src={project23} alt="" />
+                </div>
+                <div className="button flex justify-center mt-10 md:mt-10 text-sm">
+                  <button className='py-[1px] px-6 md:px-6 rounded-full border-purple-500 border-[1px] hover:bg-white hover:text-purple-500 w-fit'>
+                    <a href="https://664c255b9e6c50823bb16adf--kaleidoscopic-swan-570a57.netlify.app/" target='blank'>
+                      Link
+                    </a>
+                  </button>
+                </div>
+              </div>
             </motion.div>
 
-            <motion.div className="card3 mx-1 border-2 rounded-md min-w-[50vw] md:min-w-[12vw] h-[70vw] md:h-[16vw]"
+            <motion.div className="card3 mx-1 border-2 rounded-md min-w-[55vw] md:min-w-[12vw] p-2 h-[75vw] md:h-[19vw]"
               variants={{
                 hidden: { opacity: 0, y: 100 },
                 visible: { opacity: 1, y: 0 }
@@ -220,23 +256,28 @@ export default function Home() {
                 duration: 0.5
               }}
             >
-              project3
+              <div className="project1">
+                <p className='text-center text-xl md:text-sm p-2'>
+                  Wordle6
+                </p>
+                <div className="image">
+                  <img src={project33} alt="" />
+                </div>
+                <div className="button flex justify-center mt-10 md:mt-10 text-sm">
+                  <button className='py-[1px] px-6 md:px-6 rounded-full border-purple-500 border-[1px] hover:bg-white hover:text-purple-500 w-fit'>
+                    <a href="https://6649b1663800ea82e82b9621--friendly-druid-fa289a.netlify.app/" target='blank'>
+                      Link
+                    </a>
+                  </button>
+                </div>
+              </div>
             </motion.div>
 
-            <motion.div className="card3 mx-1 border-2 rounded-md min-w-[50vw] md:min-w-[12vw] h-[70vw] md:h-[16vw]"
-              variants={{
-                hidden: { opacity: 0, y: 100 },
-                visible: { opacity: 1, y: 0 }
-              }}
-              initial="hidden"
-              animate={mainControls2}
-              transition={{
-                delay: 0.7,
-                duration: 0.5
-              }}
-            >
-              project4
-            </motion.div>
+            <Link to="/projects">
+              <div className='w-fit text-xl md:text-md ml-10 p-2 hover:text-purple-500 cursor-pointer' onClick={reloadToHome}>
+                More
+              </div>
+            </Link>
 
 
           </div>
@@ -429,7 +470,7 @@ export default function Home() {
         </div>
       </div>
 
-      
+
     </div>
   )
 }

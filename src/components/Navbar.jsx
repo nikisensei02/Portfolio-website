@@ -17,8 +17,9 @@ export default function Navbar() {
             <div className="logo w-[100px]">
               
             </div>
-            <div className="name text-white">
-              <Link to="/">Nikshep</Link>
+            <div className="name text-white flex">
+              <p className='text-purple-500 mx-2'>{"{ / }"}</p>
+              <Link to="/">NIKSHEP</Link>
             </div>
           </div>
           <div className="pages">
