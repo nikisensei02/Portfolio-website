@@ -79,7 +79,6 @@ export default function Projects() {
           </div>
 
 
-
           <div className="project2 flex flex-col md:flex-row my-4 border-b-[1px] border-black pb-4">
             <div className="flex justify-center">
               <motion.div className="image w-[40vw] h-[40vw] md:w-[15vw] md:h-[16vw] border-2 border-black mx-4"
@@ -132,6 +131,10 @@ export default function Projects() {
           </div>
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 174dab1da62db387d94f5949742f0a1547e9d5f5
           <div className="project3 flex flex-col md:flex-row my-4 border-b-[1px] border-black pb-4">
             <div className="flex justify-center">
               <motion.div className="image w-[40vw] h-[40vw] md:w-[15vw] md:h-[16vw] border-2 border-black mx-4"
