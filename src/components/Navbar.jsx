@@ -35,7 +35,7 @@ export default function Navbar() {
               </li>
               <li className={`contacts px-2 mx-1 cursor-pointer hover:text-white `}>
                 #
-                <a href="https://drive.google.com/file/d/1Ua-t8Wl83ay1aNwS7gkC8dWp1CQynaeC/view?usp=sharing" target='blank'>
+                <a href="https://docs.google.com/document/d/1UHd8nwdQ0rDBz0hJYYsOHc7juDHPCHTfTpwWRrNr0PI/edit?usp=drive_link" target='blank'>
                   Resume
                 </a>
               </li>

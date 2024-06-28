@@ -10,7 +10,7 @@ export default function Contact() {
           </div>
           <div className="email2 flex justify-between">
             <p>Alternate:</p>
-            <a href="mailto:nikisensei02@gmail.com" className="text-blue-500">nikisensei02@gmail.com</a>
+            <a href="mailto:nikshepdotphaser@gmail.com" className="text-blue-500">nikshepdotphaser@gmail.com</a>
           </div>
           <div className="phone flex justify-between">
             <p>Phone No:</p>

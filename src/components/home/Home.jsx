@@ -17,6 +17,7 @@ import project11 from '../project/project1-1.png'
 import project12 from '../project/project1-2.png'
 import project23 from '../project/project2-3.png'
 import project33 from '../project/project3-3.png'
+import project41 from './project4-1.png'
 
 
 import { Link } from 'react-router-dom'
@@ -214,6 +215,39 @@ export default function Home() {
                   </a>
                 </div>
 
+              </div>
+            </motion.div>
+
+
+            <motion.div className="card2 mx-1 border-2 rounded-md min-w-[55vw] md:min-w-[12vw] p-2 h-[75vw] md:h-[19vw]"
+              variants={{
+                hidden: { opacity: 0, y: 100 },
+                visible: { opacity: 1, y: 0 }
+              }}
+              initial="hidden"
+              animate={mainControls2}
+              transition={{
+                delay: 0.4,
+                duration: 0.5
+              }}
+            >
+              <div className="project1">
+                <p className='text-center text-xl md:text-sm p-2 '>
+                  Anime Realm
+                </p>
+                <div className="image">
+                  <img src={project41} alt="" />
+                </div>
+                <div className="button flex justify-center mt-4 md:mt-6 text-sm">
+                  <button className='py-[1px] px-6 md:px-6 rounded-full border-purple-500 border-[1px] hover:bg-white hover:text-purple-500 w-fit'>
+                    <a href="https://667ee9612d3c734c6e7b655d--quiet-praline-05821d.netlify.app/" target='blank'>
+                      Link
+                    </a>
+                  </button>
+                  <a href="https://github.com/nikisensei02/Anime-Realm-Blogging-platform/tree/main/Anime%20Realm" className='ml-4' target='blank'>
+                    <i className="fa-brands fa-github md:fa-lg fa-xl"></i>
+                  </a>
+                </div>
               </div>
             </motion.div>
 

@@ -14,7 +14,7 @@ export default function Social() {
                     <a href="https://github.com/nikisensei02" target='blank'><i className="fa-brands fa-github md:fa-lg fa-xl"></i></a>
                 </div>
                 <div className='flex rounded-3xl w-[20px] my-4 cursor-pointer '>
-                    <a href="https://www.linkedin.com/in/nikshep-a65539223?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmDU0GmcHSG%2B4eUAke%2BZyeA%3D%3D" target='blank'>
+                    <a href="https://linkedin.com/in/nikshep-3268b930b/" target='blank'>
                         <i className="fa-brands fa-linkedin-in md:fa-lg fa-xl"></i>
                     </a>
                 </div>
